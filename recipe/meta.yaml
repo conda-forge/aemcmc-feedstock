@@ -1,4 +1,4 @@
-{% set version = "0.0.4" %}
+{% set version = "0.0.5" %}
 
 package:
   name: aemcmc
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/a/aemcmc/aemcmc-{{ version }}.tar.gz
-  sha256: 5339b023f4b83f7387b26f0ce9454c5a236b3c38e9a60022ffa7449435bcbd88
+  sha256: 3741c2f9ef6ed792d3e4fa297db0e86e1b32e8fd63cead92cee915743c23ccbd
 
 build:
   number: 0
@@ -22,9 +22,14 @@ requirements:
     - python >=3.7
     - numpy >=1.18.1
     - scipy >=1.4.0
-    - aesara >=2.1.1
-    - aeppl >=0.0.5
+    - aesara >=2.6.6
+    - aeppl >=0.0.31
+    - aehmc >=0.0.6
     - polyagamma >=1.3.2
+    - cons
+    - logical-unification
+    - etuples
+    - miniKanren
 
 test:
   imports:
