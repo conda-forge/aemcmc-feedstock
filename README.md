@@ -146,9 +146,8 @@ Feedstock Maintainers
 =====================
 
 * [@brandonwillard](https://github.com/brandonwillard/)
+* [@dgerlanc](https://github.com/dgerlanc/)
+* [@maresb](https://github.com/maresb/)
 * [@rlouf](https://github.com/rlouf/)
 * [@zoj613](https://github.com/zoj613/)
-
-
-<!-- dummy commit to enable rerendering -->
 
