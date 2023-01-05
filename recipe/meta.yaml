@@ -1,4 +1,4 @@
-{% set version = "0.0.6" %}
+{% set version = "0.0.7" %}
 
 package:
   name: aemcmc
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/a/aemcmc/aemcmc-{{ version }}.tar.gz
-  sha256: 718d0e3624736af3eaca3e19d812a77061c7dcbdd8ff68441b4f97c5558be0d0
+  sha256: ecebf996fc5c8e9103fc254cc8d89b6e81aa1f20f505992f845779c17c03d18d
 
 build:
   number: 0
