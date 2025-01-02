@@ -5,21 +5,21 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/a/aemcmc/aemcmc-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/a/aemcmc/aemcmc-{{ version }}.tar.gz
   sha256: 999ebabe05a0c04d8c1cb53e0fd87b32e24a6565c58297221559a6d12d5abf30
 
 build:
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
   noarch: python
 
 requirements:
   host:
     - pip
-    - python >=3.7
+    - python {{ python_min }}
     - setuptools
   run:
-    - python >=3.7
+    - python >={{ python_min }}
     - numpy >=1.18.1
     - scipy >=1.4.0
     - aesara >=2.6.6
@@ -32,6 +32,8 @@ requirements:
     - miniKanren
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - aemcmc
     - aemcmc.dists
